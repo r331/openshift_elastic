@@ -1,0 +1,1780 @@
+
+{
+    "bom": {
+        "group-id": "io.quarkus",
+        "artifact-id": "quarkus-bom",
+        "version": "1.0.0.CR1"
+    },
+    "quarkus-core-version": "1.0.0.CR1",
+    "extensions": [
+        {
+            "name": "Quarkus - Core",
+            "metadata": {
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-core",
+            "version": "1.0.0.CR1",
+            "description": "Build parent to bring in required dependencies"
+        },
+        {
+            "name": "ArC",
+            "metadata": {
+                "short-name": "CDI",
+                "keywords": [
+                    "arc",
+                    "cdi",
+                    "dependency-injection",
+                    "di"
+                ],
+                "guide": "https://quarkus.io/guides/cdi-reference",
+                "categories": [
+                    "core"
+                ],
+                "status": "stable",
+                "unlisted": true
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-arc",
+            "version": "1.0.0.CR1",
+            "description": "Build time CDI dependency injection"
+        },
+        {
+            "name": "Caffeine",
+            "metadata": {
+                "keywords": [
+                    "cache"
+                ],
+                "categories": [
+                    "data"
+                ],
+                "status": "stable",
+                "unlisted": "true"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-caffeine",
+            "version": "1.0.0.CR1",
+            "description": "A high performance caching library for Java 8+"
+        },
+        {
+            "name": "JAXB",
+            "metadata": {
+                "keywords": [
+                    "resteasy-jaxb",
+                    "resteasy",
+                    "jaxb",
+                    "xml"
+                ],
+                "categories": [
+                    "serialization"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-jaxb",
+            "version": "1.0.0.CR1",
+            "description": "XML serialization support"
+        },
+        {
+            "name": "Jackson",
+            "metadata": {
+                "keywords": [
+                    "jackson",
+                    "json"
+                ],
+                "categories": [
+                    "serialization"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-jackson",
+            "version": "1.0.0.CR1",
+            "description": "Jackson Databind support"
+        },
+        {
+            "name": "JSON-B",
+            "metadata": {
+                "keywords": [
+                    "jsonb",
+                    "json-b",
+                    "json"
+                ],
+                "guide": "https://quarkus.io/guides/rest-json",
+                "categories": [
+                    "serialization"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-jsonb",
+            "version": "1.0.0.CR1",
+            "description": "JSON Binding support"
+        },
+        {
+            "name": "JSON-P",
+            "metadata": {
+                "keywords": [
+                    "jsonp",
+                    "json-p",
+                    "json"
+                ],
+                "categories": [
+                    "serialization"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-jsonp",
+            "version": "1.0.0.CR1",
+            "description": "JSON Processing support"
+        },
+        {
+            "name": "Netty",
+            "metadata": {
+                "categories": [
+                    "web"
+                ],
+                "status": "stable",
+                "unlisted": true
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-netty",
+            "version": "1.0.0.CR1",
+            "description": "Netty is a non-blocking I/O client-server framework. Used by Quarkus as foundation layer."
+        },
+        {
+            "name": "Agroal - Database connection pool",
+            "metadata": {
+                "keywords": [
+                    "agroal",
+                    "database-connection-pool"
+                ],
+                "categories": [
+                    "data"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-agroal",
+            "version": "1.0.0.CR1",
+            "description": "Pool your database connections (included in Hibernate ORM)"
+        },
+        {
+            "name": "Artemis Core",
+            "metadata": {
+                "keywords": [
+                    "artemis-core",
+                    "artemis"
+                ],
+                "categories": [
+                    "messaging"
+                ],
+                "status": "preview",
+                "unlisted": true
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-artemis-core",
+            "version": "1.0.0.CR1",
+            "description": "Use ActiveMQ Artemis as message broker"
+        },
+        {
+            "name": "Artemis JMS",
+            "metadata": {
+                "keywords": [
+                    "artemis-jms",
+                    "artemis"
+                ],
+                "categories": [
+                    "messaging"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-artemis-jms",
+            "version": "1.0.0.CR1",
+            "description": "Use ActiveMQ Artemis as a JMS implementation"
+        },
+        {
+            "name": "Elasticsearch REST Client",
+            "metadata": {
+                "keywords": [
+                    "search"
+                ],
+                "categories": [
+                    "data"
+                ],
+                "status": "stable",
+                "unlisted": "true"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-elasticsearch-rest-client",
+            "version": "1.0.0.CR1",
+            "description": "Elasticsearch REST client"
+        },
+        {
+            "name": "Security",
+            "metadata": {
+                "unlisted": true,
+                "keywords": [
+                    "security"
+                ],
+                "categories": [
+                    "security"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-security",
+            "version": "1.0.0.CR1",
+            "description": "Security"
+        },
+        {
+            "name": "Elytron Security",
+            "metadata": {
+                "keywords": [
+                    "security"
+                ],
+                "categories": [
+                    "security"
+                ],
+                "stable": "true"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-elytron-security",
+            "version": "1.0.0.CR1",
+            "description": "Secure your services"
+        },
+        {
+            "name": "Properties File based Security",
+            "metadata": {
+                "keywords": [
+                    "security"
+                ],
+                "categories": [
+                    "security"
+                ],
+                "status": "stable",
+                "guide": "https://quarkus.io/guides/security-properties"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-elytron-security-properties-file",
+            "version": "1.0.0.CR1",
+            "description": "Secure your applications using properties files"
+        },
+        {
+            "name": "Elytron Security OAuth 2.0",
+            "metadata": {
+                "keywords": [
+                    "security",
+                    "oauth2"
+                ],
+                "categories": [
+                    "security"
+                ],
+                "guide": "https://quarkus.io/guides/security-oauth2",
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-elytron-security-oauth2",
+            "version": "1.0.0.CR1",
+            "description": "Secure your applications with OAuth2 opaque tokens"
+        },
+        {
+            "name": "OpenID Connect",
+            "metadata": {
+                "keywords": [
+                    "oauth2",
+                    "openid-connect"
+                ],
+                "guide": "https://quarkus.io/guides/security-openid-connect",
+                "categories": [
+                    "security"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-oidc",
+            "version": "1.0.0.CR1",
+            "description": "Secure your applications with OpenID Connect and Keycloak"
+        },
+        {
+            "name": "Keycloak Authorization",
+            "metadata": {
+                "keywords": [
+                    "oauth2",
+                    "openid-connect",
+                    "keycloak",
+                    "authorization-services",
+                    "policy-enforcer",
+                    "fine-grained-permission",
+                    "resource-based-authorization"
+                ],
+                "guide": "https://quarkus.io/guides/security-keycloak-authorization",
+                "categories": [
+                    "security"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-keycloak-authorization",
+            "version": "1.0.0.CR1",
+            "description": "Build parent to bring in required dependencies"
+        },
+        {
+            "name": "Flyway",
+            "metadata": {
+                "keywords": [
+                    "flyway",
+                    "database",
+                    "data"
+                ],
+                "guide": "https://quarkus.io/guides/flyway",
+                "categories": [
+                    "data"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-flyway",
+            "version": "1.0.0.CR1",
+            "description": "Handle your database schema migrations"
+        },
+        {
+            "name": "Hibernate ORM",
+            "metadata": {
+                "short-name": "JPA",
+                "keywords": [
+                    "hibernate-orm",
+                    "jpa",
+                    "hibernate"
+                ],
+                "guide": "https://quarkus.io/guides/hibernate-orm",
+                "categories": [
+                    "data"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-hibernate-orm",
+            "version": "1.0.0.CR1",
+            "description": "Define your persistent model with Hibernate ORM and JPA"
+        },
+        {
+            "name": "Hibernate ORM with Panache",
+            "metadata": {
+                "keywords": [
+                    "hibernate-orm-panache",
+                    "panache",
+                    "hibernate",
+                    "jpa"
+                ],
+                "guide": "https://quarkus.io/guides/hibernate-orm-panache",
+                "categories": [
+                    "data"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-hibernate-orm-panache",
+            "version": "1.0.0.CR1",
+            "description": "Define your persistent model in Hibernate ORM with Panache"
+        },
+        {
+            "name": "MongoDB with Panache",
+            "metadata": {
+                "keywords": [
+                    "mongo",
+                    "mongodb",
+                    "nosql",
+                    "datastore",
+                    "panache"
+                ],
+                "categories": [
+                    "data"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-mongodb-panache",
+            "version": "1.0.0.CR1",
+            "description": "Use an active record or repository pattern with MongoDB"
+        },
+        {
+            "name": "Hibernate Search + Elasticsearch",
+            "metadata": {
+                "keywords": [
+                    "hibernate-search-elasticsearch",
+                    "search",
+                    "full-text",
+                    "hibernate",
+                    "elasticsearch"
+                ],
+                "guide": "https://quarkus.io/guides/hibernate-search-elasticsearch",
+                "categories": [
+                    "data"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-hibernate-search-elasticsearch",
+            "version": "1.0.0.CR1",
+            "description": "Automatically index your Hibernate entities in Elasticsearch"
+        },
+        {
+            "name": "Hibernate Validator",
+            "metadata": {
+                "short-name": "bean validation",
+                "keywords": [
+                    "hibernate-validator",
+                    "bean-validation",
+                    "validation"
+                ],
+                "guide": "https://quarkus.io/guides/validation",
+                "categories": [
+                    "web",
+                    "data"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-hibernate-validator",
+            "version": "1.0.0.CR1",
+            "description": "Validate data coming to your REST endpoints"
+        },
+        {
+            "name": "Infinispan Client",
+            "metadata": {
+                "keywords": [
+                    "infinispan-client",
+                    "data-grid-client",
+                    "infinispan"
+                ],
+                "guide": "https://quarkus.io/guides/infinispan-client",
+                "categories": [
+                    "data"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-infinispan-client",
+            "version": "1.0.0.CR1",
+            "description": "Connect to the Infinispan data grid for distributed caching"
+        },
+        {
+            "name": "Infinispan Embedded",
+            "metadata": {
+                "unlisted": "true",
+                "status": "preview",
+                "keywords": [
+                    "infinispan"
+                ],
+                "categories": [
+                    "data"
+                ],
+                "guide": "https://quarkus.io/guides/infinispan-embedded"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-infinispan-embedded",
+            "version": "1.0.0.CR1",
+            "description": "Run an embedded Infinispan data grid server for distributed caching"
+        },
+        {
+            "name": "Jaeger",
+            "metadata": {
+                "keywords": [
+                    "tracing",
+                    "distributed-tracing",
+                    "jaeger"
+                ],
+                "categories": [
+                    "observability"
+                ],
+                "unlisted": true,
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-jaeger",
+            "version": "1.0.0.CR1",
+            "description": "Trace your services with Jaeger"
+        },
+        {
+            "name": "JDBC Driver - PostgreSQL",
+            "metadata": {
+                "keywords": [
+                    "jdbc-postgresql",
+                    "jdbc",
+                    "postgresql"
+                ],
+                "categories": [
+                    "data"
+                ]
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-jdbc-postgresql",
+            "version": "1.0.0.CR1",
+            "description": "PostgreSQL database connector"
+        },
+        {
+            "name": "JDBC Driver - H2",
+            "metadata": {
+                "keywords": [
+                    "jdbc-h2",
+                    "jdbc",
+                    "h2"
+                ],
+                "categories": [
+                    "data"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-jdbc-h2",
+            "version": "1.0.0.CR1",
+            "description": "H2 database connector"
+        },
+        {
+            "name": "JDBC Driver - MariaDB",
+            "metadata": {
+                "keywords": [
+                    "jdbc-mariadb",
+                    "jdbc",
+                    "mariadb"
+                ],
+                "categories": [
+                    "data"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-jdbc-mariadb",
+            "version": "1.0.0.CR1",
+            "description": "MariaDB database connector"
+        },
+        {
+            "name": "JDBC Driver - Microsoft SQL Server",
+            "metadata": {
+                "keywords": [
+                    "jdbc-mssql",
+                    "jdbc",
+                    "mssql",
+                    "sql-server"
+                ],
+                "categories": [
+                    "data"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-jdbc-mssql",
+            "version": "1.0.0.CR1",
+            "description": "Microsoft SQL Server database connector"
+        },
+        {
+            "name": "JDBC Driver - MySQL",
+            "metadata": {
+                "keywords": [
+                    "jdbc-mysql",
+                    "jdbc",
+                    "mysql"
+                ],
+                "categories": [
+                    "data"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-jdbc-mysql",
+            "version": "1.0.0.CR1",
+            "description": "MySQL database connector"
+        },
+        {
+            "name": "JDBC Driver - Derby",
+            "metadata": {
+                "keywords": [
+                    "jdbc-derby",
+                    "jdbc",
+                    "derby"
+                ],
+                "categories": [
+                    "data"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-jdbc-derby",
+            "version": "1.0.0.CR1",
+            "description": "Derby database connector"
+        },
+        {
+            "name": "Apache Kafka Client",
+            "metadata": {
+                "keywords": [
+                    "kafka"
+                ],
+                "categories": [
+                    "messaging"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-kafka-client",
+            "version": "1.0.0.CR1",
+            "description": "A client for Apache Kafka"
+        },
+        {
+            "name": "Apache Kafka Streams",
+            "metadata": {
+                "keywords": [
+                    "kafka",
+                    "kafka-streams"
+                ],
+                "categories": [
+                    "messaging"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-kafka-streams",
+            "version": "1.0.0.CR1",
+            "description": "Implement stream processing applications based on Apache Kafka"
+        },
+        {
+            "name": "SmallRye Health",
+            "metadata": {
+                "short-name": "health",
+                "keywords": [
+                    "smallrye-health",
+                    "health-check",
+                    "health",
+                    "microprofile-health",
+                    "microprofile-health-check"
+                ],
+                "guide": "https://quarkus.io/guides/microprofile-health",
+                "categories": [
+                    "cloud"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-smallrye-health",
+            "version": "1.0.0.CR1",
+            "description": "Monitor service health"
+        },
+        {
+            "name": "SmallRye JWT",
+            "metadata": {
+                "keywords": [
+                    "smallrye-jwt",
+                    "jwt",
+                    "json-web-token",
+                    "rbac"
+                ],
+                "guide": "https://quarkus.io/guides/security-jwt",
+                "categories": [
+                    "web",
+                    "security"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-smallrye-jwt",
+            "version": "1.0.0.CR1",
+            "description": "Secure your applications with JSON Web Token"
+        },
+        {
+            "name": "SmallRye Context Propagation",
+            "metadata": {
+                "short-name": "context propagation",
+                "keywords": [
+                    "smallrye-context-propagation",
+                    "microprofile-context-propagation",
+                    "context-propagation",
+                    "context",
+                    "reactive"
+                ],
+                "categories": [
+                    "reactive"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-smallrye-context-propagation",
+            "version": "1.0.0.CR1",
+            "description": "SmallRye Context Propagation"
+        },
+        {
+            "name": "SmallRye Reactive Streams Operators",
+            "metadata": {
+                "short-name": "reactive streams",
+                "keywords": [
+                    "smallrye-reactive-streams-operators",
+                    "smallrye-reactive-streams",
+                    "reactive-streams-operators",
+                    "reactive-streams",
+                    "microprofile-reactive-streams",
+                    "reactive"
+                ],
+                "categories": [
+                    "reactive"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-smallrye-reactive-streams-operators",
+            "version": "1.0.0.CR1",
+            "description": "Operators for Reactive Streams programming"
+        },
+        {
+            "name": "SmallRye Reactive Type Converters",
+            "metadata": {
+                "keywords": [
+                    "smallrye-reactive-type-converters",
+                    "reactive-type-converters",
+                    "reactive-streams-operators",
+                    "reactive-streams",
+                    "microprofile-reactive-streams",
+                    "reactive"
+                ],
+                "categories": [
+                    "reactive"
+                ],
+                "status": "stable",
+                "unlisted": true
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-smallrye-reactive-type-converters",
+            "version": "1.0.0.CR1",
+            "description": "Converters for reactive types from various reactive programming libraries"
+        },
+        {
+            "name": "SmallRye Reactive Messaging",
+            "metadata": {
+                "keywords": [
+                    "smallrye-reactive-messaging",
+                    "reactive-messaging",
+                    "reactive"
+                ],
+                "guide": "https://quarkus.io/guides/reactive-messaging",
+                "categories": [
+                    "messaging"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-smallrye-reactive-messaging",
+            "version": "1.0.0.CR1",
+            "description": "Asynchronous messaging for Reactive Streams"
+        },
+        {
+            "name": "SmallRye Reactive Messaging - Kafka Connector",
+            "metadata": {
+                "short-name": "kafka",
+                "keywords": [
+                    "kafka",
+                    "reactive-kafka"
+                ],
+                "guide": "https://quarkus.io/guides/kafka",
+                "categories": [
+                    "messaging"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-smallrye-reactive-messaging-kafka",
+            "version": "1.0.0.CR1",
+            "description": "Kafka reactive messaging connector"
+        },
+        {
+            "name": "SmallRye Reactive Messaging - AMQP Connector",
+            "metadata": {
+                "keywords": [
+                    "amqp",
+                    "reactive-amqp"
+                ],
+                "guide": "https://quarkus.io/guides/amqp",
+                "categories": [
+                    "messaging"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-smallrye-reactive-messaging-amqp",
+            "version": "1.0.0.CR1",
+            "description": "AMQP reactive messaging connector"
+        },
+        {
+            "name": "SmallRye Reactive Messaging - MQTT Connector",
+            "metadata": {
+                "keywords": [
+                    "mqtt",
+                    "reactive-mqtt"
+                ],
+                "categories": [
+                    "messaging"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-smallrye-reactive-messaging-mqtt",
+            "version": "1.0.0.CR1",
+            "description": "MQTT reactive messaging connector"
+        },
+        {
+            "name": "SmallRye Metrics",
+            "metadata": {
+                "short-name": "metrics",
+                "keywords": [
+                    "smallrye-metrics",
+                    "metrics",
+                    "metric",
+                    "prometheus",
+                    "monitoring"
+                ],
+                "guide": "https://quarkus.io/guides/microprofile-metrics",
+                "categories": [
+                    "observability"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-smallrye-metrics",
+            "version": "1.0.0.CR1",
+            "description": "Extract metrics out of your services"
+        },
+        {
+            "name": "SmallRye OpenAPI",
+            "metadata": {
+                "keywords": [
+                    "smallrye-openapi",
+                    "openapi",
+                    "open-api"
+                ],
+                "guide": "https://quarkus.io/guides/openapi-swaggerui",
+                "categories": [
+                    "web"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-smallrye-openapi",
+            "version": "1.0.0.CR1",
+            "description": "Document your REST APIs with OpenAPI - comes with Swagger UI"
+        },
+        {
+            "name": "SmallRye OpenTracing",
+            "metadata": {
+                "keywords": [
+                    "smallrye-opentracing",
+                    "opentracing",
+                    "tracing",
+                    "distributed-tracing",
+                    "jaeger"
+                ],
+                "guide": "https://quarkus.io/guides/opentracing",
+                "categories": [
+                    "observability"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-smallrye-opentracing",
+            "version": "1.0.0.CR1",
+            "description": "Trace your services with Jaeger"
+        },
+        {
+            "name": "REST Client",
+            "metadata": {
+                "keywords": [
+                    "rest-client",
+                    "web-client",
+                    "microprofile-rest-client"
+                ],
+                "guide": "https://quarkus.io/guides/rest-client",
+                "categories": [
+                    "web"
+                ]
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-rest-client",
+            "version": "1.0.0.CR1",
+            "description": "Call REST services"
+        },
+        {
+            "name": "RESTEasy JAX-RS Common",
+            "metadata": {
+                "keywords": [
+                    "resteasy",
+                    "jaxrs",
+                    "web",
+                    "rest"
+                ],
+                "categories": [
+                    "web"
+                ],
+                "status": "stable",
+                "unlisted": true
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-resteasy-common",
+            "version": "1.0.0.CR1",
+            "description": "REST framework implementing JAX-RS and more"
+        },
+        {
+            "name": "RESTEasy JAX-RS",
+            "metadata": {
+                "short-name": "jax-rs",
+                "keywords": [
+                    "resteasy",
+                    "jaxrs",
+                    "web",
+                    "rest"
+                ],
+                "guide": "https://quarkus.io/guides/rest-json",
+                "categories": [
+                    "web"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-resteasy",
+            "version": "1.0.0.CR1",
+            "description": "REST framework implementing JAX-RS and more"
+        },
+        {
+            "name": "RESTEasy Jackson",
+            "metadata": {
+                "keywords": [
+                    "resteasy-jackson",
+                    "jaxrs-json",
+                    "resteasy-json",
+                    "resteasy",
+                    "jaxrs",
+                    "json",
+                    "jackson"
+                ],
+                "categories": [
+                    "web",
+                    "serialization"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-resteasy-jackson",
+            "version": "1.0.0.CR1",
+            "description": "Jackson serialization support for RESTEasy"
+        },
+        {
+            "name": "RESTEasy JSON-B",
+            "metadata": {
+                "keywords": [
+                    "resteasy-jsonb",
+                    "jaxrs-json",
+                    "resteasy-json",
+                    "resteasy",
+                    "jaxrs",
+                    "json",
+                    "jsonb"
+                ],
+                "guide": "https://quarkus.io/guides/rest-json",
+                "categories": [
+                    "web",
+                    "serialization"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-resteasy-jsonb",
+            "version": "1.0.0.CR1",
+            "description": "JSON-B serialization support for RESTEasy"
+        },
+        {
+            "name": "RESTEasy JAX-B",
+            "metadata": {
+                "keywords": [
+                    "resteasy-jaxb",
+                    "jaxrs-json",
+                    "resteasy-json",
+                    "resteasy",
+                    "jaxrs",
+                    "json",
+                    "jaxb",
+                    "jax-b"
+                ],
+                "categories": [
+                    "web",
+                    "serialization"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-resteasy-jaxb",
+            "version": "1.0.0.CR1",
+            "description": "XML serialization support for RESTEasy"
+        },
+        {
+            "name": "RESTEasy Server Common",
+            "metadata": {
+                "keywords": [
+                    "resteasy",
+                    "jaxrs",
+                    "web",
+                    "rest"
+                ],
+                "guide": "https://quarkus.io/guides/rest-json",
+                "categories": [
+                    "web"
+                ],
+                "status": "stable",
+                "unlisted": true
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-resteasy-server-common",
+            "version": "1.0.0.CR1",
+            "description": "RESTEasy Server common"
+        },
+        {
+            "name": "Narayana JTA - Transaction manager",
+            "metadata": {
+                "keywords": [
+                    "narayana-jta",
+                    "narayana",
+                    "jta",
+                    "transactions",
+                    "transaction",
+                    "tx",
+                    "txs"
+                ],
+                "guide": "https://quarkus.io/guides/transaction",
+                "categories": [
+                    "data"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-narayana-jta",
+            "version": "1.0.0.CR1",
+            "description": "JTA transaction support (included in Hibernate ORM)"
+        },
+        {
+            "name": "Undertow Servlet",
+            "metadata": {
+                "short-name": "servlet",
+                "keywords": [
+                    "undertow",
+                    "servlet"
+                ],
+                "categories": [
+                    "web",
+                    "http"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-undertow",
+            "version": "1.0.0.CR1",
+            "description": "Support for servlets"
+        },
+        {
+            "name": "SmallRye Fault Tolerance",
+            "metadata": {
+                "keywords": [
+                    "smallrye-fault-tolerance",
+                    "fault-tolerance",
+                    "microprofile-fault-tolerance",
+                    "circuit-breaker",
+                    "bulkhead"
+                ],
+                "categories": [
+                    "cloud"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-smallrye-fault-tolerance",
+            "version": "1.0.0.CR1",
+            "description": "Define fault-tolerant services"
+        },
+        {
+            "name": "Eclipse Vert.x - Core",
+            "metadata": {
+                "keywords": [
+                    "eclipse-vert.x",
+                    "vertx",
+                    "vert.x",
+                    "reactive"
+                ],
+                "categories": [
+                    "reactive"
+                ],
+                "status": "stable",
+                "unlisted": true
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-vertx-core",
+            "version": "1.0.0.CR1",
+            "description": "Vert.x Core"
+        },
+        {
+            "name": "Eclipse Vert.x",
+            "metadata": {
+                "keywords": [
+                    "eclipse-vert.x",
+                    "vertx",
+                    "vert.x",
+                    "reactive"
+                ],
+                "guide": "https://quarkus.io/guides/vertx",
+                "categories": [
+                    "reactive"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-vertx",
+            "version": "1.0.0.CR1",
+            "description": "Reactive application toolkit"
+        },
+        {
+            "name": "Eclipse Vert.x - HTTP",
+            "metadata": {
+                "keywords": [
+                    "eclipse-vert.x",
+                    "vertx",
+                    "vert.x",
+                    "reactive",
+                    "vertx-http",
+                    "http"
+                ],
+                "categories": [
+                    "web",
+                    "reactive"
+                ],
+                "status": "stable",
+                "unlisted": true
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-vertx-http",
+            "version": "1.0.0.CR1",
+            "description": "Vert.x HTTP"
+        },
+        {
+            "name": "Eclipse Vert.x - Web",
+            "metadata": {
+                "keywords": [
+                    "eclipse",
+                    "vertx",
+                    "vert.x",
+                    "reactive",
+                    "vertx-http",
+                    "http",
+                    "route",
+                    "routes"
+                ],
+                "categories": [
+                    "web",
+                    "reactive"
+                ],
+                "status": "stable",
+                "guide": "https://quarkus.io/guides/reactive-routes"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-vertx-web",
+            "version": "1.0.0.CR1",
+            "description": "Vert.x Web"
+        },
+        {
+            "name": "Reactive PostgreSQL client",
+            "metadata": {
+                "keywords": [
+                    "eclipse-vert.x",
+                    "vertx",
+                    "vert.x",
+                    "reactive",
+                    "database",
+                    "data",
+                    "postgresql"
+                ],
+                "guide": "https://quarkus.io/guides/reactive-sql-clients",
+                "categories": [
+                    "data",
+                    "reactive"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-reactive-pg-client",
+            "version": "1.0.0.CR1",
+            "description": "A reactive client for the PostgreSQL database"
+        },
+        {
+            "name": "Reactive MySQL client",
+            "metadata": {
+                "keywords": [
+                    "eclipse-vert.x",
+                    "vertx",
+                    "vert.x",
+                    "reactive",
+                    "database",
+                    "data",
+                    "mysql"
+                ],
+                "guide": "https://quarkus.io/guides/reactive-sql-clients",
+                "categories": [
+                    "data",
+                    "reactive"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-reactive-mysql-client",
+            "version": "1.0.0.CR1",
+            "description": "A reactive client for the MySQL database"
+        },
+        {
+            "name": "Mailer",
+            "metadata": {
+                "keywords": [
+                    "mail",
+                    "mailer"
+                ],
+                "guide": "https://quarkus.io/guides/mailer",
+                "categories": [
+                    "miscellaneous"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-mailer",
+            "version": "1.0.0.CR1",
+            "description": "Send emails"
+        },
+        {
+            "name": "MongoDB client",
+            "metadata": {
+                "keywords": [
+                    "mongo",
+                    "mongodb",
+                    "nosql",
+                    "datastore"
+                ],
+                "categories": [
+                    "data"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-mongodb-client",
+            "version": "1.0.0.CR1",
+            "description": "An imperative and reactive client for MongoDB"
+        },
+        {
+            "name": "Undertow WebSockets",
+            "metadata": {
+                "short-name": "websockets",
+                "keywords": [
+                    "undertow-websockets",
+                    "undertow-websocket",
+                    "websocket",
+                    "websockets",
+                    "web-socket",
+                    "web-sockets",
+                    "http"
+                ],
+                "guide": "https://quarkus.io/guides/websockets",
+                "categories": [
+                    "web"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-undertow-websockets",
+            "version": "1.0.0.CR1",
+            "description": "WebSocket support"
+        },
+        {
+            "name": "Scheduler - tasks",
+            "metadata": {
+                "keywords": [
+                    "scheduler",
+                    "tasks",
+                    "periodic-tasks"
+                ],
+                "guide": "https://quarkus.io/guides/scheduler",
+                "categories": [
+                    "miscellaneous"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-scheduler",
+            "version": "1.0.0.CR1",
+            "description": "Schedule jobs and tasks"
+        },
+        {
+            "name": "Quarkus Extension for Spring DI API",
+            "metadata": {
+                "keywords": [
+                    "spring-di",
+                    "spring"
+                ],
+                "guide": "https://quarkus.io/guides/spring-di",
+                "categories": [
+                    "compatibility"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-spring-di",
+            "version": "1.0.0.CR1",
+            "description": "Define your dependency injection with Spring DI"
+        },
+        {
+            "name": "Quarkus Extension for Spring Web API",
+            "metadata": {
+                "keywords": [
+                    "spring-web",
+                    "spring"
+                ],
+                "guide": "https://quarkus.io/guides/spring-web",
+                "categories": [
+                    "compatibility"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-spring-web",
+            "version": "1.0.0.CR1",
+            "description": "Use Spring Web annotations to create your REST services"
+        },
+        {
+            "name": "Quarkus Extension for Spring Data JPA API",
+            "metadata": {
+                "keywords": [
+                    "spring-data",
+                    "spring"
+                ],
+                "guide": "https://quarkus.io/guides/spring-data-jpa",
+                "categories": [
+                    "compatibility"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-spring-data-jpa",
+            "version": "1.0.0.CR1",
+            "description": "Use Spring Data JPA annotations to create your data access layer"
+        },
+        {
+            "name": "Swagger UI",
+            "metadata": {
+                "keywords": [
+                    "swagger-ui",
+                    "openapi"
+                ],
+                "guide": "https://quarkus.io/guides/openapi-swaggerui",
+                "status": "stable",
+                "unlisted": true
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-swagger-ui",
+            "version": "1.0.0.CR1",
+            "description": "Swagger UI"
+        },
+        {
+            "name": "Kotlin",
+            "metadata": {
+                "keywords": [
+                    "kotlin"
+                ],
+                "guide": "https://quarkus.io/guides/kotlin",
+                "categories": [
+                    "alt-languages"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-kotlin",
+            "version": "1.0.0.CR1",
+            "description": "Write your services in Kotlin"
+        },
+        {
+            "name": "AWS Lambda",
+            "metadata": {
+                "keywords": [
+                    "lambda",
+                    "aws",
+                    "amazon"
+                ],
+                "categories": [
+                    "cloud"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-amazon-lambda",
+            "version": "1.0.0.CR1",
+            "description": "AWS Lambda support"
+        },
+        {
+            "name": "AWS Lambda HTTP",
+            "metadata": {
+                "keywords": [
+                    "lambda",
+                    "aws",
+                    "amazon",
+                    "http",
+                    "rest"
+                ],
+                "categories": [
+                    "cloud"
+                ],
+                "guide": "https://quarkus.io/guides/amazon-lambda-http",
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-amazon-lambda-http",
+            "version": "1.0.0.CR1",
+            "description": "Allows Java applications written for a servlet container to run in AWS Lambda"
+        },
+        {
+            "name": "Amazon DynamoDB client",
+            "metadata": {
+                "keywords": [
+                    "dynamodb",
+                    "dynamo",
+                    "aws",
+                    "amazon"
+                ],
+                "categories": [
+                    "data"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-amazon-dynamodb",
+            "version": "1.0.0.CR1",
+            "description": "A client for the Amazon DynamoDB datastore"
+        },
+        {
+            "name": "Azure Functions HTTP",
+            "metadata": {
+                "keywords": [
+                    "azure",
+                    "http"
+                ],
+                "categories": [
+                    "cloud"
+                ],
+                "guide": "https://quarkus.io/guides/azure-functions-http",
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-azure-functions-http",
+            "version": "1.0.0.CR1",
+            "description": "This package contains all Java interfaces and annotations to interact with Microsoft Azure functions runtime."
+        },
+        {
+            "name": "Kubernetes",
+            "metadata": {
+                "keywords": [
+                    "kubernetes"
+                ],
+                "guide": "https://quarkus.io/guides/kubernetes",
+                "categories": [
+                    "cloud"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-kubernetes",
+            "version": "1.0.0.CR1",
+            "description": "Generate Kubernetes resources from annotations"
+        },
+        {
+            "name": "Kubernetes Client",
+            "metadata": {
+                "keywords": [
+                    "kubernetes-client"
+                ],
+                "categories": [
+                    "cloud"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-kubernetes-client",
+            "version": "1.0.0.CR1",
+            "description": "Interact with Kubernetes and develop Kubernetes Operators"
+        },
+        {
+            "name": "Kogito",
+            "metadata": {
+                "keywords": [
+                    "kogito",
+                    "drools",
+                    "jbpm"
+                ],
+                "guide": "https://quarkus.io/guides/kogito",
+                "categories": [
+                    "business-automation"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-kogito",
+            "version": "1.0.0.CR1",
+            "description": "Add business automation capabilities with Kogito"
+        },
+        {
+            "name": "Apache Tika",
+            "metadata": {
+                "keywords": [
+                    "tika",
+                    "parser"
+                ],
+                "categories": [
+                    "miscellaneous"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-tika",
+            "version": "1.0.0.CR1",
+            "description": "Extract data from your documents with Apache Tika"
+        },
+        {
+            "name": "Neo4j client",
+            "metadata": {
+                "keywords": [
+                    "neo4j",
+                    "graph",
+                    "nosql",
+                    "datastore"
+                ],
+                "categories": [
+                    "data"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-neo4j",
+            "version": "1.0.0.CR1",
+            "description": "A client for the Neo4j graph datastore"
+        },
+        {
+            "name": "Scala",
+            "metadata": {
+                "keywords": [
+                    "scala"
+                ],
+                "categories": [
+                    "alt-languages"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-scala",
+            "version": "1.0.0.CR1",
+            "description": "Write your services in Scala"
+        },
+        {
+            "name": "JGit",
+            "metadata": {
+                "keywords": [
+                    "git"
+                ],
+                "categories": [
+                    "miscellaneous"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-jgit",
+            "version": "1.0.0.CR1",
+            "description": "Access your Git repositories"
+        },
+        {
+            "name": "Narayana STM - Software Transactional Memory",
+            "metadata": {
+                "keywords": [
+                    "narayana-stm",
+                    "narayana",
+                    "stm",
+                    "transactions",
+                    "transaction",
+                    "software-transactional-memory",
+                    "tx",
+                    "txs"
+                ],
+                "guide": "https://quarkus.io/guides/software-transactional-memory",
+                "categories": [
+                    "data"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-narayana-stm",
+            "version": "1.0.0.CR1",
+            "description": "Software Transactional Memory (stm) support"
+        },
+        {
+            "name": "Elytron Security JDBC Realm",
+            "metadata": {
+                "keywords": [
+                    "security",
+                    "jdbc"
+                ],
+                "guide": "https://quarkus.io/guides/security-jdbc",
+                "categories": [
+                    "security"
+                ],
+                "status": "stable"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-elytron-security-jdbc",
+            "version": "1.0.0.CR1",
+            "description": "Secure your applications with username/password stored in a database"
+        },
+        {
+            "name": "Vault",
+            "metadata": {
+                "keywords": [
+                    "vault",
+                    "security"
+                ],
+                "guide": "https://quarkus.io/guides/vault",
+                "categories": [
+                    "security"
+                ],
+                "status": "preview"
+            },
+            "group-id": "io.quarkus",
+            "artifact-id": "quarkus-vault",
+            "version": "1.0.0.CR1",
+            "description": "Store your credentials securely in HashiCorp Vault"
+        }
+    ],
+    "categories": [
+        {
+            "name": "Core",
+            "id": "core",
+            "description": "Essential Quarkus components. Provided automatically"
+        },
+        {
+            "name": "Web",
+            "id": "web",
+            "description": "Everything you need for REST endpoints, HTTP and web formats like JSON",
+            "metadata": {
+                "pinned": [
+                    "io.quarkus:quarkus-resteasy",
+                    "io.quarkus:quarkus-resteasy-jsonb",
+                    "io.quarkus:quarkus-resteasy-jackson"
+                ]
+            }
+        },
+        {
+            "name": "Data",
+            "id": "data",
+            "description": "Accessing and managing your data (RDBMS, NoSQL, caching, transaction management, etc)",
+            "metadata": {
+                "pinned": [
+                    "io.quarkus:quarkus-hibernate-orm",
+                    "io.quarkus:quarkus-hibernate-orm-panache",
+                    "io.quarkus:quarkus-jdbc-postgresql",
+                    "io.quarkus:quarkus-jdbc-mariadb",
+                    "io.quarkus:quarkus-jdbc-mysql",
+                    "io.quarkus:quarkus-jdbc-mssql",
+                    "io.quarkus:quarkus-jdbc-h2",
+                    "io.quarkus:quarkus-jdbc-derby"
+                ]
+            }
+        },
+        {
+            "name": "Messaging",
+            "id": "messaging",
+            "description": "Send and receives message to various messaging ssytems (AMQP, KAfka etc)",
+            "metadata": {
+                "pinned": [
+                    "io.quarkus:quarkus-smallrye-reactive-messaging",
+                    "io.quarkus:quarkus-smallrye-reactive-messaging-amqp",
+                    "io.quarkus:quarkus-smallrye-reactive-messaging-kafka",
+                    "io.quarkus:quarkus-smallrye-reactive-messaging-mqtt"
+                ]
+            }
+        },
+        {
+            "name": "Reactive",
+            "id": "reactive",
+            "description": "Non blocking stack and connectors",
+            "metadata": {
+                "pinned": [
+                    "io.quarkus:quarkus-vertx"
+                ]
+            }
+        },
+        {
+            "name": "Cloud",
+            "id": "cloud",
+            "description": "Useful for Cloud Native deployments platforms like Kubernetes and cloud providers",
+            "metadata": {
+                "pinned": [
+                    "io.quarkus:quarkus-kubernetes",
+                    "io.quarkus:quarkus-smallrye-health",
+                    "io.quarkus:quarkus-smallrye-fault-tolerance"
+                ]
+            }
+        },
+        {
+            "name": "Observability",
+            "id": "observability",
+            "description": "Metrics, tracing, etc"
+        },
+        {
+            "name": "Security",
+            "id": "security",
+            "description": "Everything you need to secure your application",
+            "metadata": {
+                "pinned": [
+                    "io.quarkus:quarkus-oidc",
+                    "io.quarkus:quarkus-smallrye-jwt"
+                ]
+            }
+        },
+        {
+            "name": "Integration",
+            "id": "integration",
+            "description": "Connectors to read to write from a skew of systems (file, S#, Twitter, etc)",
+            "metadata": {
+                "pinned": [
+                    "org.apache.camel.quarkus:camel-quarkus-core",
+                    "org.apache.camel.quarkus:camel-quarkus-core-xml"
+                ]
+            }
+        },
+        {
+            "name": "Business Automation",
+            "id": "business-automation",
+            "description": "Rules engine, BPM, etc"
+        },
+        {
+            "name": "Serialization",
+            "id": "serialization",
+            "description": "Serializing and deserializing various formats"
+        },
+        {
+            "name": "Miscellaneous",
+            "id": "miscellaneous",
+            "description": "Mixed bag of good stuff"
+        },
+        {
+            "name": "Compatibility",
+            "id": "compatibility",
+            "description": "Support for alternative programming models on Quarkus"
+        },
+        {
+            "name": "Alternative languages",
+            "id": "alt-languages",
+            "description": "Support for other JVM based languages"
+        }
+    ]
+}
